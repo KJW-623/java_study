@@ -40,7 +40,7 @@ public class Practice02 {
 		//3. 3.14 값을 가지고 있는 pi 라는 실수형 변수를 만들고 화면에 출력하세요.
 		//예시) 원주율 : 3.14
 		double pi = 3.14;
-		System.out.println("원주욜: " + pi);
+		System.out.println("원주욜: " +  pi);
 		
 		
 		/*
