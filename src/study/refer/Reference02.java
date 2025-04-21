@@ -82,7 +82,7 @@ public class Reference02 {
 		}
 		
 		for(int i=0; i<5; i++) {
-			System.out.println(pointArr[i]+" ");
+			System.out.print(pointArr[i]+" ");
 		}
 		System.out.println();
 		
