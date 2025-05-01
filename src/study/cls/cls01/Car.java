@@ -1,4 +1,4 @@
-package study.cls01;
+package study.cls.cls01;
 
 public class Car {
 	

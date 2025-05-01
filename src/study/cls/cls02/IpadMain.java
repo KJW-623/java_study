@@ -1,4 +1,4 @@
-package study.cls02;
+package study.cls.cls02;
 
 import java.util.Scanner;
 

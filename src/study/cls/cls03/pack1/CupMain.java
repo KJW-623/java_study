@@ -1,0 +1,26 @@
+package study.cls.cls03.pack1;
+
+import java.util.Scanner;
+
+//import study.cls.cls03.pack2;
+//상단에 import르를 하면 본 페이지에서 Cup클래스 사용시 import한 클래스로 인식
+
+public class CupMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//상단에 import가 없으면, 동일 패키지 클래스로 인식
+		Cup c1 = new Cup();
+		c1.method();
+		
+		study.cls.cls03.pack2.Cup c2 = new study.cls.cls03.pack2.Cup();
+		c2.method();
+		
+		//pack2.Cup c2 = new pack1.Cup();
+		//Cup c1 = new Monitor();
+		
+		Scanner scanner = new java.util.Scanner(System.in);
+	}
+
+}
