@@ -21,6 +21,14 @@ public class CupMain {
 		//Cup c1 = new Monitor();
 		
 		Scanner scanner = new java.util.Scanner(System.in);
+		
+		study.cls.cls03.pack1.Cup c3 = new study.cls.cls03.pack1.Cup();
+		c3.method();
+		
+		
+		//c2.b
+		//c3.a
+		//c3.b
 	}
 
 }
