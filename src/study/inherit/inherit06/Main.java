@@ -21,6 +21,45 @@ public class Main {
 		
 		Vehicle v = takeTaxi();
 		Vehicle v2 = new Taxi();
+		Vehicle v3 = takeBus();
+		Bus b3 = takeBus();
+		
+		//Bus b4 = takeVehicle();
+		//Bus = Vehicle
+		Vehicle v4 = takeVehicle();
+		
+		//----------
+		
+		Vehicle vv = new Vehicle();
+		
+		Vehicle vv2 = new Bus();
+//		vv2.run();
+//		vv2.start();
+		Bus bb = new Bus();
+		bb.run();
+		bb.start();
+		
+		Bus bb2 = (Bus)vv2;
+		bb2.start();
+		
+//		Bus bb3 = (Bus)vv;
+//		bb3.start();
+		
+		//----------------
+		
+		Vehicle vv4 = takeVehicle();
+		
+		if(vv4 instanceof Bus) {
+			Bus bbb = (Bus)vv4;
+			System.out.println("Bus가 들어있음");
+		}
+		if(vv4 instanceof Taxi) {
+			Taxi ttt = (Taxi)vv4;
+			System.out.println("Taxi가 들어있음");
+		}
+		
+//		Bus bbb = (Bus)vv4;
+//		bbb.start();
 		
 	}
 	
@@ -36,8 +75,15 @@ public class Main {
 	
 	public static Vehicle takeVehicle() {
 		//return new Vehicle();
-		return new Bus();
+		//return new Bus();
 		//return new Taxi();
+		
+		int n = ((int)Math.random()*2)+1;
+		if(n==1)
+			return new Bus();
+		else
+			return new Taxi();
+		
 	}
 
 }

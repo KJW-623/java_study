@@ -6,6 +6,10 @@ public class Bus extends Vehicle {
 		System.out.println("Taxi run");
 	}
 	
+	public void start() {
+		
+	}
+	
 	
 	
 }
