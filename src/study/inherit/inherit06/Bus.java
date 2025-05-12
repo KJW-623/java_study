@@ -7,7 +7,7 @@ public class Bus extends Vehicle {
 	}
 	
 	public void start() {
-		
+		System.out.println("운행 시작~");
 	}
 	
 	
