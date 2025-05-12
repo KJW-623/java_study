@@ -1,7 +1,6 @@
 package study.practice.practice48;
 
 public class Food {
-
 	String name; //이름
 	int price; //가격
 	int stock; //재고
@@ -46,3 +45,13 @@ public class Food {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
