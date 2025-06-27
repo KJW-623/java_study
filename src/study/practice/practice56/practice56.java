@@ -1,4 +1,4 @@
-package study.practice;
+package study.practice.practice56;
 
 public class practice56 {
 
