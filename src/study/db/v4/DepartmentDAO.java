@@ -1,0 +1,45 @@
+package study.db.v4;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import study.db.v2.DBConnectionManager;
+
+public class DepartmentDAO {
+
+	Connection conn;
+	PreparedStatement psmt;
+	ResultSet rs;
+
+	public DepartmentDTO findDepartmentByDeptno(int deptno) {
+		conn = DBConnectionManager.connectDB();
+
+		String query = "select * from department where deptno = ? ";
+
+		DepartmentDTO departmentDTO = null;
+
+		try {
+			psmt = conn.prepareStatement(query);
+			psmt.setInt(1, deptno);
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				departmentDTO = new DepartmentDTO();
+
+				departmentDTO.setDeptno(rs.getInt("deptno"));
+				departmentDTO.setDname(rs.getString("dname"));
+				departmentDTO.setPart(rs.getInt("part"));
+				departmentDTO.setBuild(rs.getString("build"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		DBConnectionManager.disconnectDB(conn, psmt, rs);
+		return departmentDTO;
+	}
+	
+	
+}
